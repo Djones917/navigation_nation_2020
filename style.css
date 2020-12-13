@@ -67,7 +67,7 @@ nav li a:hover {
     transform: scale(1.2);
 }
 
-na li a::before {
+nav li a::before {
   content: "";
   width: 25vw;
   height: 3px;
@@ -75,8 +75,13 @@ na li a::before {
   position: absolute;
   top: 47.5%;
   left: 0;
+  opacity: 0;
 }
 
+nav li a:hover::before {
+  opacity: 1;
+
+}
 
 nav li:nth-of-type(1) {
   background-color: var(--navColor1);
